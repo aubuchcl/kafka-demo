@@ -14,3 +14,6 @@ Now run these commands in the container shell to create a topic, produce to it, 
 ./kafka-console-consumer.sh --bootstrap-server broker-1:19092,broker-2:19092,broker-3:19092 --topic test-topic --from-beginning
 
 ./kafka-console-producer.sh --bootstrap-server broker-1:19092,broker-2:19092,broker-3:19092 --topic test-topic
+
+
+Commands are not necessarily in path, see /opt/kafka/bin/ if executable not present in path.
