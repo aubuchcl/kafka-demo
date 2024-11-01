@@ -35,7 +35,30 @@
           }
         }
       },
-      "stateful": false
+      "stateful": true, 
+      "volumes": [
+        {
+          "destination": "/mnt/shared/config",
+          "read_only": false,
+          "local": {
+            "max_size": "5GB"
+          }
+        },
+        {
+          "destination": "/var/lib/kafka/data",
+          "read_only": false,
+          "local": {
+            "max_size": "5GB"
+          }
+        },
+        {
+          "destination": "/etc/kafka/secrets",
+          "read_only": false,
+          "local": {
+            "max_size": "5GB"
+          }
+        }
+      ]
     },
     "controller-2": {
       "config": {
@@ -67,7 +90,30 @@
           }
         }
       },
-      "stateful": false
+      "stateful": true,
+      "volumes": [
+        {
+          "destination": "/mnt/shared/config",
+          "read_only": false,
+          "local": {
+            "max_size": "5GB"
+          }
+        },
+        {
+          "destination": "/var/lib/kafka/data",
+          "read_only": false,
+          "local": {
+            "max_size": "5GB"
+          }
+        },
+        {
+          "destination": "/etc/kafka/secrets",
+          "read_only": false,
+          "local": {
+            "max_size": "5GB"
+          }
+        }
+      ]
     },
     "controller-3": {
       "config": {
@@ -99,7 +145,31 @@
           }
         }
       },
-      "stateful": false
+      "stateful": true,
+      "volumes": [
+        {
+          "destination": "/mnt/shared/config",
+          "read_only": false,
+          "local": {
+            "max_size": "5GB"
+          }
+        },
+        {
+          "destination": "/var/lib/kafka/data",
+          "read_only": false,
+          "local": {
+            "max_size": "5GB"
+          }
+        },
+        {
+          "destination": "/etc/kafka/secrets",
+          "read_only": false,
+          "local": {
+            "max_size": "5GB"
+          }
+        }
+      ]
+
     },
     "broker-1": {
       "config": {
@@ -136,7 +206,30 @@
           }
         }
       },
-      "stateful": false
+      "stateful": true,
+      "volumes": [
+        {
+          "destination": "/mnt/shared/config",
+          "read_only": false,
+          "local": {
+            "max_size": "5GB"
+          }
+        },
+        {
+          "destination": "/var/lib/kafka/data",
+          "read_only": false,
+          "local": {
+            "max_size": "5GB"
+          }
+        },
+        {
+          "destination": "/etc/kafka/secrets",
+          "read_only": false,
+          "local": {
+            "max_size": "5GB"
+          }
+        }
+      ]
     },
     "broker-2": {
       "config": {
@@ -173,7 +266,30 @@
           }
         }
       },
-      "stateful": false
+      "stateful": true,
+      "volumes": [
+        {
+          "destination": "/mnt/shared/config",
+          "read_only": false,
+          "local": {
+            "max_size": "5GB"
+          }
+        },
+        {
+          "destination": "/var/lib/kafka/data",
+          "read_only": false,
+          "local": {
+            "max_size": "5GB"
+          }
+        },
+        {
+          "destination": "/etc/kafka/secrets",
+          "read_only": false,
+          "local": {
+            "max_size": "5GB"
+          }
+        }
+      ]
     },
     "broker-3": {
       "config": {
@@ -210,7 +326,31 @@
           }
         }
       },
-      "stateful": false
+      "stateful": true,
+      "volumes": [
+        {
+          "destination": "/mnt/shared/config",
+          "read_only": false,
+          "local": {
+            "max_size": "5GB"
+          }
+        },
+        {
+          "destination": "/var/lib/kafka/data",
+          "read_only": false,
+          "local": {
+            "max_size": "5GB"
+          }
+        },
+        {
+          "destination": "/etc/kafka/secrets",
+          "read_only": false,
+          "local": {
+            "max_size": "5GB"
+          }
+        }
+      ]
+
     }
   }
 }
